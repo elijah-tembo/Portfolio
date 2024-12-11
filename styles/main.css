@@ -1,0 +1,353 @@
+/* Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+body {
+
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Container style  */
+.container{
+    background-image: url(../images/bg/3d\ Color\ Cubes.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+    padding-bottom: 50px;
+}
+.second-container{
+    margin: auto;
+    background-color: white;
+    opacity: 90%;
+    justify-content: center;
+}
+
+
+/* Header and Navigation */
+header {
+    position: fixed;
+    background: linear-gradient(140deg, #0099F7, #F11712);
+    color: #fff;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 0px 0px 10px 10px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: rgb(227, 6, 6);
+}
+
+span h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: -50px;
+    justify-content: center;
+}
+ /* SIDEBAR STYLE NAV  */
+ /* .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0px 200px 0px 200px;
+ }
+.menu{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.menu li a{
+    text-decoration: none;
+    padding: 8px 12px;
+}
+.menu li a:hover{
+    background-color: #575757;
+    border-radius: 4px;
+}
+.toggle-btn{
+    display: none; hidden by default
+    background: transparent;
+    border: 1px solid white;
+    font-size: 1.5em;
+    cursor: pointer;
+} */
+
+
+
+/* Hero Section */
+.hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    justify-content: center;
+    align-items: flex-start;
+    margin:auto;
+    /* padding-top: 100px; */
+}
+.hero .welcome{
+    margin: 0rem 4rem 0rem 2rem;
+    padding: 0px 0px 0px 0px;
+    justify-content: center;
+}
+.hero p {
+    font-size: 1.2rem;
+}
+.hero .title{
+    margin-top: 10px;
+    background: linear-gradient(140deg, #0099F7, #F11712);
+    color: transparent;
+    background-clip: text;
+    font-size: 25px;
+}
+.hero-photo{
+    display: inline-block;
+    width: 80%;
+    height: 95%;
+    margin-right: -5rem;
+    justify-content: center;
+    margin: auto;
+    padding-left: 30px;
+}
+.hero-photo-bg{
+    background-image: url(../images/right-side\ face.png);
+    background-size: cover;
+    background-color: #0099F7;
+    display: inline-block;
+    width: 60%;
+    height: 80%;
+    margin: auto;
+    /* margin: 3rem 5rem -5rem 4rem; */
+    border-radius: 100px;
+}
+.hero-photo-span-div{
+    width:190px;
+    height:250px;
+    border: 1px solid white;
+    margin: 0px 5px 5px 5px;
+}
+
+/* Hero Social Icons */
+.hero-social ul{
+    display: flex;
+    gap: 30px;
+    margin: 20px;
+    justify-content: center;
+}
+.hero-social .skill a,
+.hero-social .skill{
+    display: flex;
+}
+.hero-social ul li{
+    list-style: none;
+}
+.hero-social .skill a{
+    text-align: center;
+    background: transparent;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+.hero-social .skill a:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 20px #f10804;
+    background-color: #f11612;
+}
+
+/* download-cv visit-github  */
+.hero .last-div ul{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.hero .last-div ul li{
+    display: flex;
+    list-style: none;
+    background: linear-gradient(140deg, #0099F7, #F11712);
+    justify-content: center;
+    border-radius: 10px;
+}
+.hero .last-div ul li a{
+    text-decoration: none;
+    padding-inline: 20px;
+    color: white;
+}
+
+
+
+/* Sections */
+/* About Page  */
+#about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    width: 80%;
+    padding-top: 110px;
+}
+.about-photo{
+    display:contents;
+    margin-right: -10rem;
+    justify-content: center;
+    margin: auto;
+}
+.about-photo-bg{
+    background-image: url(../images/left-side\ face.png);
+    background-size: cover;
+    background-color: #0099F7;
+    display: inline-block;
+    width: 60%;
+    height: 80%;
+    margin: auto;
+    border-radius: 100px;
+}
+.about-photo-span-div{
+    width:180px;
+    height:250px;
+    border: 1px solid white;
+    margin: 0px 5px 5px 5px;
+}
+.about-section{
+    text-align: center ;
+}
+.about-section h1{
+    font-size: 40px;
+}
+.about-section h2{
+    margin-top: 0px;
+    background: linear-gradient(140deg, #0099F7, #F11712);
+    color: transparent;
+    background-clip: text;
+    font-size: 35px;
+}
+.about-section p{
+    margin-top: 0px;
+}
+.about-section .skill{
+    display: flex;
+    gap: 20px;
+    margin: 10px 0px;
+    justify-content: center;
+}
+
+.about-section .skill a{
+    text-align: center;
+    width: 60%;
+    background: transparent;
+    border: 2px solid #F11712;
+    border-radius: 10px;
+    padding: 5%;
+    color: lightgray;
+    transition: all .3s ease-in-out;
+}
+.about-section .skill a:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 15px #F11712;
+}
+.about-section button{
+    padding: 1% 5%;
+    color: white;
+    margin-left: .5rem;
+    background: linear-gradient(to right, #0099F7, #F11712);
+    border-radius: 10px;
+    font-size: large;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 5px;
+}
+
+
+/* MY WORKS SECTION  */
+#portfolio span h2{
+    margin-top: 10px;
+    background: linear-gradient(140deg, #0099F7, #F11712);
+    color: transparent;
+    background-clip: text;
+    font-size: 35px;
+}
+.gallery {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallery .item{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 25vh;
+    height: 20vh;
+}
+.gallery a .item{
+    text-align: center;
+    background: transparent;
+    border: 2px solid #13e31069;
+    border-radius: 10px;
+    color: rgb(6, 5, 5);
+    transition: all .3s ease-in-out;
+}
+.gallery a:hover .item{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 15px #F11712;
+}
+
+
+
+
+
+
+/* Services */
+.services ul{
+    list-style: none;
+}
+
+/* Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+form button {
+    padding: 0.7rem 2rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
